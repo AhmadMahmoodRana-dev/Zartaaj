@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { FaBars } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
-
+import { FaWhatsapp, FaFacebookF, FaInstagram } from "react-icons/fa";
 const navigation = [
   { name: "Home", href: "#" },
   { name: "About", href: "#" },
@@ -53,9 +53,30 @@ export default function Navbar() {
               Contact Us
             </a>
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm/6 font-semibold text-gray-900">
-              Log in <span aria-hidden="true">&rarr;</span>
+          <div className="hidden lg:flex gap-4 lg:flex-1 lg:justify-end">
+            <a
+              href="https://wa.me/923008878690"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-7 h-7 bg-green-400 flex justify-center items-center rounded-full"
+            >
+              <FaWhatsapp size={18} color="white" />
+            </a>
+            <a
+              href="https://wa.me/923008878690"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-7 h-7 bg-blue-500 flex justify-center items-center rounded-full"
+            >
+              <FaFacebookF size={16} color="white" />
+            </a>
+            <a
+              href="https://wa.me/923008878690"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-7 h-7 bg-pink-400 flex justify-center items-center rounded-full"
+            >
+              <FaInstagram size={18} color="white" />
             </a>
           </div>
         </nav>
@@ -97,12 +118,30 @@ export default function Navbar() {
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
+                <div className="flex gap-4 flex-1 mt-5">
                   <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    href="https://wa.me/923008878690"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-7 h-7 bg-green-400 flex justify-center items-center rounded-full"
                   >
-                    Log in
+                    <FaWhatsapp size={18} color="white" />
+                  </a>
+                  <a
+                    href="https://wa.me/923008878690"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-7 h-7 bg-blue-500 flex justify-center items-center rounded-full"
+                  >
+                    <FaFacebookF size={16} color="white" />
+                  </a>
+                  <a
+                    href="https://wa.me/923008878690"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-7 h-7 bg-pink-400 flex justify-center items-center rounded-full"
+                  >
+                    <FaInstagram size={18} color="white" />
                   </a>
                 </div>
               </div>

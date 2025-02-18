@@ -1,5 +1,5 @@
 import React from "react";
-
+import header from "../assets/header.png"
 const AboutUs = () => {
   return (
     <>
@@ -7,7 +7,7 @@ const AboutUs = () => {
         <div className="md:w-[50%] w-full image flex justify-center items-center md:mt-0 mt-10">
           <img
             className=" object-cover w-full h-[90%]"
-            src="./src/assets/header.png"
+            src={header}
             alt="Zartaaj Royal Glow"
           />
         </div>
@@ -28,7 +28,7 @@ const AboutUs = () => {
             a world where luxury meets self-care, and let your skin shine with
             confidence
           </p>
-          <button className="bg-purple-800 px-4 py-2 mt-4 rounded-md text-white font-semibold">
+          <button className="bg-purple-800 px-4 py-2 mt-6 rounded-md text-white font-semibold">
             About More
           </button>
         </div>
