@@ -2,8 +2,8 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="relative isolate px-6  lg:px-20">
-      {/* <div
+    <div className="relative isolate px-6 lg:px-20">
+      <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
       >
@@ -14,14 +14,14 @@ const Header = () => {
           }}
           className="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
         />
-      </div> */}
-      <div className="w-full h-[100vh] md:flex md:mt-0 mt-28">
+      </div>
+      <div className="w-full h-[90vh] md:flex md:mt-0 mt-28 md:text-left text-center">
         <div className="content md:w-[50%] md:h-full w-full flex flex-col justify-center">
-          <h1 className="xl:text-7xl lg:text-5xl md:text-4xl text-4xl font-semibold xl:leading-[4.7rem] lg:leading-[3.5rem] tracking-wider text-purple-800">
+          <h1 className="xl:text-7xl lg:text-[3.3rem] md:text-4xl text-4xl font-semibold xl:leading-[4.7rem] lg:leading-[3.5rem] tracking-wider text-purple-800">
             Unveil <br /> <span className="text-black">Your Royal Glow</span>{" "}
             <br /> with Zartaaj
           </h1>
-          <p className="text-gray-600 xl:text-xl lg:text-md md:text-sm text-sm mt-8">
+          <p className="text-gray-600 xl:text-xl lg:text-[.95rem] md:text-sm text-sm mt-8">
             At Zartaaj, we believe that beauty is more than just skin deep—it's
             an experience of pure elegance and confidence. Our premium beauty
             creams are crafted with the finest ingredients to nourish, hydrate,
@@ -32,7 +32,7 @@ const Header = () => {
         </div>
         <div className="md:w-[50%] w-full image flex justify-center items-center md:mt-0 mt-10">
           <img
-            className=" object-cover rounded-full"
+            className=" object-cover w-full"
             src="./src/assets/header.png"
             alt="Zartaaj Royal Glow"
           />
