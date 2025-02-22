@@ -1,12 +1,12 @@
 import React from "react";
-import header from "../assets/header.png"
+import header from "../assets/img.png"
 const AboutUs = () => {
   return (
     <>
-      <div className="w-full lg:min-h-[46vh] h-auto  md:flex justify-center items-center  px-6  lg:px-16 bg-[#ededed]">
+      <div className="w-full lg:min-h-[68vh] h-auto  md:flex justify-center items-center  px-6  lg:px-16 bg-[#ededed]">
         <div className="md:w-[50%] w-full image flex justify-center items-center md:mt-0 mt-10">
           <img
-            className=" object-cover w-full h-[90%]"
+            className=" object-cover w-[60%] h-[90%]"
             src={header}
             alt="Zartaaj Royal Glow"
           />

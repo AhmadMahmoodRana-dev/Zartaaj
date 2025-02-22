@@ -1,5 +1,5 @@
 import React from "react";
-import header from "../assets/header.png"
+import header from "../assets/img.png"
 const Header = () => {
   return (
     <div className="relative isolate px-6 lg:px-20">
@@ -28,11 +28,11 @@ const Header = () => {
             and rejuvenate your skin, giving you a radiant glow that lasts.
             Embrace the luxury of self-care with Zartaaj, because you deserve
             nothing but the best.
-          </p>
+          </p>  
         </div>
         <div className="md:w-[50%] w-full image flex justify-center items-center md:mt-0 mt-10">
           <img
-            className=" object-cover w-full"
+            className=" object-cover w-[70%]"
             src={header}
             alt="Zartaaj Royal Glow"
           />

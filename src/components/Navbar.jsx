@@ -120,7 +120,7 @@ export default function Navbar() {
                 </div>
                 <div className="flex gap-4 flex-1 mt-5">
                   <a
-                    href="https://wa.me/923008878690"
+                    href="https://wa.me/923248988989"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-7 h-7 bg-green-400 flex justify-center items-center rounded-full"
@@ -128,7 +128,7 @@ export default function Navbar() {
                     <FaWhatsapp size={18} color="white" />
                   </a>
                   <a
-                    href="https://wa.me/923008878690"
+                    href="https://wa.me/923248988989"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-7 h-7 bg-blue-500 flex justify-center items-center rounded-full"
@@ -136,7 +136,7 @@ export default function Navbar() {
                     <FaFacebookF size={16} color="white" />
                   </a>
                   <a
-                    href="https://wa.me/923008878690"
+                    href="https://wa.me/923248988989"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-7 h-7 bg-pink-400 flex justify-center items-center rounded-full"

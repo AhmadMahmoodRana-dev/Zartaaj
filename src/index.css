@@ -1,1 +1,13 @@
 @import "tailwindcss";
+#whatsapp-icon {
+    position: fixed;
+    right: 20px; /* Adjust as needed */
+    top: 80%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+#whatsapp-icon img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
