@@ -4,6 +4,7 @@ import AboutUs from '../components/AboutUs'
 import Advantages from '../components/Advantages'
 import VideoBackground from '../components/VideoBackground'
 import ReviewSection from "../components/ReviewSlider"
+import ContactUs from '../components/ContactUs'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Advantages/>
       <VideoBackground/>
       <ReviewSection/>
+      <ContactUs/>
     </div>
   )
 }
