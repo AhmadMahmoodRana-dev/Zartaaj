@@ -5,6 +5,7 @@ import Advantages from '../components/Advantages'
 import VideoBackground from '../components/VideoBackground'
 import ReviewSection from "../components/ReviewSlider"
 import ContactUs from '../components/ContactUs'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <VideoBackground/>
       <ReviewSection/>
       <ContactUs/>
+      <Footer/>
     </div>
   )
 }

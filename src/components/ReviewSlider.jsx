@@ -9,7 +9,7 @@ const reviews = [
     name: "Nadia F.",
     review: "Zartaaj has completely transformed my skin! It feels softer, smoother, and has a beautiful glow. Absolutely love it!",
     rating: 5,
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    image: "https://randomuser.me/api/portraits/women/1.jpg",
   },
   {
     name: "Zainab L.",
@@ -21,19 +21,19 @@ const reviews = [
     name: "Hina R.",
     review: "The texture is rich, yet non-greasy. My skin looks radiant and feels so soft. Zartaaj is now my go-to!",
     rating: 4.5,
-    image: "https://randomuser.me/api/portraits/men/3.jpg",
+    image: "https://randomuser.me/api/portraits/women/3.jpg",
   },
   {
     name: "Aisha M.",
     review: "I have sensitive skin, and this cream is perfect! No irritation, just smooth and healthy skin. Absolutely love it!",
     rating: 4.5,
-    image: "https://randomuser.me/api/portraits/men/3.jpg",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     name: "Sarah K.",
     review: "Great for dry skin! It keeps my face moisturized all day. I just wish it had a fragrance-free option.",
     rating: 4.5,
-    image: "https://randomuser.me/api/portraits/men/3.jpg",
+    image: "https://randomuser.me/api/portraits/women/5.jpg",
   },
 ];
 
