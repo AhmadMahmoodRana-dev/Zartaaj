@@ -3,11 +3,11 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { FaBars } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import { FaWhatsapp, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "About", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Contact Us", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Contact Us", href: "/#ContactUs" },
 ];
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -39,19 +39,17 @@ export default function Navbar() {
               <FaBars aria-hidden="true" className="size-6" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-4">
-            <a className="text-sm/6 font-semibold text-white px-4 py-2 rounded-md bg-purple-900 uppercase">
+          <div className="hidden lg:flex lg:gap-x-4 cursor-pointer">
+            <Link to={'/'} className="text-sm/6 font-semibold text-white px-4 py-2 rounded-md bg-purple-900 uppercase">
               Home
-            </a>
-            <a className="text-sm/6 font-semibold text-black px-4 py-2 uppercase">
+            </Link>
+            <Link to={'/about'} className="text-sm/6 font-semibold text-black px-4 py-2 uppercase">
               About
-            </a>
-            <a className="text-sm/6 font-semibold text-black px-4 py-2 uppercase">
-              MarketPlace
-            </a>
-            <a className="text-sm/6 font-semibold text-black px-4 py-2 uppercase">
+            </Link>
+            <a href="/#ContactUs" className="text-sm/6 font-semibold text-black px-4 py-2 uppercase">
               Contact Us
             </a>
+            
           </div>
           <div className="hidden lg:flex gap-4 lg:flex-1 lg:justify-end">
             <a
