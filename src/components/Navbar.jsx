@@ -3,14 +3,17 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { FaBars } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import { FaWhatsapp, FaFacebookF, FaInstagram } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Contact Us", href: "/#ContactUs" },
+  // { name: "Contact Us", href: "/#ContactUs" },
 ];
+
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <>
@@ -40,16 +43,25 @@ export default function Navbar() {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-4 cursor-pointer">
-            <Link to={'/'} className="text-sm/6 font-semibold text-white px-4 py-2 rounded-md bg-purple-900 uppercase">
-              Home
-            </Link>
-            <Link to={'/about'} className="text-sm/6 font-semibold text-black px-4 py-2 uppercase">
-              About
-            </Link>
-            <a href="/#ContactUs" className="text-sm/6 font-semibold text-black px-4 py-2 uppercase">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className={`text-sm/6 font-semibold px-4 py-2 uppercase rounded-md transition-all duration-300 ${
+                  location.pathname === item.href
+                    ? "bg-purple-900 text-white"
+                    : "text-black hover:bg-gray-200"
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
+            <a
+              href="#ContactUs"
+              className={`text-sm/6 font-semibold px-4 py-2 uppercase rounded-md transition-all duration-300`}
+            >
               Contact Us
             </a>
-            
           </div>
           <div className="hidden lg:flex gap-4 lg:flex-1 lg:justify-end">
             <a
@@ -107,14 +119,25 @@ export default function Navbar() {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                      to={item.href}
+                      className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold transition-all duration-300 ${
+                        location.pathname === item.href
+                          ? "bg-purple-900 text-white"
+                          : "text-gray-900 hover:bg-gray-50"
+                      }`}
+                      onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
+                  <a
+                    href="/"
+                    className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold transition-all duration-300`}
+                  >
+                    Contact Us
+                  </a>
                 </div>
                 <div className="flex gap-4 flex-1 mt-5">
                   <a
