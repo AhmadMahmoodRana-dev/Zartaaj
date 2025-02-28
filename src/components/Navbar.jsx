@@ -4,7 +4,7 @@ import { FaBars } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import { FaWhatsapp, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
-
+import logo from "../assets/logo.png"
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
@@ -27,8 +27,8 @@ export default function Navbar() {
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
-                src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
+                src={logo}
+                className="h-12 w-auto"
               />
             </a>
           </div>
