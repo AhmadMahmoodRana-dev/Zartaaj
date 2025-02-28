@@ -8,7 +8,7 @@ import logo from "../assets/logo.png"
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  // { name: "Contact Us", href: "/#ContactUs" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -56,12 +56,7 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <a
-              href="#ContactUs"
-              className={`text-sm/6 font-semibold px-4 py-2 uppercase rounded-md transition-all duration-300`}
-            >
-              Contact Us
-            </a>
+            
           </div>
           <div className="hidden lg:flex gap-4 lg:flex-1 lg:justify-end">
             <a
@@ -95,8 +90,8 @@ export default function Navbar() {
                 <span className="sr-only">Your Company</span>
                 <img
                   alt=""
-                  src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                  className="h-8 w-auto"
+                  src={logo}
+                  className="h-12 w-auto"
                 />
               </a>
               <button
@@ -125,12 +120,7 @@ export default function Navbar() {
                       {item.name}
                     </Link>
                   ))}
-                  <a
-                    href="/"
-                    className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold transition-all duration-300`}
-                  >
-                    Contact Us
-                  </a>
+                 
                 </div>
                 <div className="flex gap-4 flex-1 mt-5">
                   <a

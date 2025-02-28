@@ -1,6 +1,7 @@
 import React from "react";
-import header from "../assets/img.png"
-import ceo from "../assets/ceo.jpg"
+import header from "../assets/img.png";
+import ceo from "../assets/ceo.jpg";
+import marketting from "../assets/marketting.jpg";
 
 const AboutUs = () => {
   return (
@@ -43,49 +44,116 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Founder Section */}
-<div className="bg-white py-16">
-  <div className="container mx-auto px-6">
-    <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-      Meet The Founder
-    </h2>
-    <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
-      {/* Profile Image */}
-      <div className="md:w-2/3">
-        <img
-          src={ceo}
-          alt="Company Founder"
-          className="w-80 h-80 rounded-full mx-auto object-cover border-4 border-gray-100"
-        />
-      </div>
+      {/* Founders Section */}
+      <div className="bg-gradient-to-b from-gray-50 to-white py-24">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16 relative  after:bg-purple-500 after:absolute after:left-1/2 after:-translate-x-1/2 after:mt-6">
+            Leadership Team
+          </h2>
 
-      {/* Profile Details */}
-      <div className="md:w-2/3 text-center md:text-left">
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">
-         Daniyal
-        </h3>
-        <p className="text-lg text-gray-600 mb-4 font-semibold">
-          Founder, CEO & Operations Manager
-        </p>
-        <p className="text-gray-600 mb-4">
-          Visionary leader and hands-on operator managing all aspects of our company. 
-          With expertise in strategic management, marketing, and product development, 
-          Sarah oversees daily operations while driving innovation in the beauty industry.
-        </p>
-        <div className="mt-6">
-          <h4 className="font-semibold text-gray-800 mb-2">Key Responsibilities:</h4>
-          <ul className="text-gray-600 list-disc list-inside space-y-1 mx-auto md:mx-0">
-            <li>Business Strategy & Development</li>
-            <li>Marketing & Brand Management</li>
-            <li>Operations & Finance Oversight</li>
-            <li>Product Innovation & Research</li>
-          </ul>
+          {/* CEO Section */}
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 mb-24">
+            {/* Profile Image */}
+            <div className="md:w-1/2 relative group">
+              <div className="absolute inset-0 bg-purple-100 rounded-full transform group-hover:rotate-6 transition duration-500"></div>
+              <img
+                src={ceo}
+                alt="CEO"
+                className="relative w-96 h-96 rounded-full mx-auto object-cover border-8 border-white shadow-xl transform group-hover:scale-105 transition duration-500"
+              />
+            </div>
+
+            {/* Profile Details */}
+            <div className="md:w-1/2 text-center md:text-left">
+              <div className="inline-block bg-purple-100 text-purple-800 px-4 py-1 rounded-full mb-4 text-sm font-semibold">
+                Founder & CEO
+              </div>
+              <h3 className="text-3xl font-bold text-gray-800 mb-4">
+                Daniyal
+              </h3>
+              <p className="text-lg text-gray-600 mb-6 max-w-xl">
+                Visionary leader driving innovation in the beauty industry. With
+                12+ years of experience, Daniyal combines strategic insight with
+                hands-on execution to deliver exceptional results while
+                maintaining our core values of sustainability and inclusivity.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-2">
+                  <svg
+                    className="w-5 h-5 text-purple-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <span className="font-semibold text-gray-800">
+                    Featured in:
+                  </span>
+                  <span className="text-gray-600">
+                    Forbes, BeautyInc, Vogue
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Marketing Manager Section */}
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
+            {/* Profile Image */}
+            <div className="md:w-1/2 relative group">
+              <div className="absolute inset-0 bg-blue-100 rounded-full transform group-hover:-rotate-6 transition duration-500"></div>
+              <img
+                src={marketting}
+                alt="Marketing Manager"
+                className="relative w-96 h-96 rounded-full mx-auto object-cover border-8 border-white shadow-xl transform group-hover:scale-105 transition duration-500"
+              />
+            </div>
+
+            {/* Profile Details */}
+            <div className="md:w-1/2 text-center md:text-right">
+              <div className="inline-block bg-blue-100 text-blue-800 px-4 py-1 rounded-full mb-4 text-sm font-semibold">
+                Marketing Manager
+              </div>
+              <h3 className="text-3xl font-bold text-gray-800 mb-4">
+                Zohaib Ali
+              </h3>
+              <p className="text-lg text-gray-600 mb-6 max-w-xl">
+                Creative force behind our brand's digital presence. With a
+                passion for storytelling and data-driven strategies, Alex has
+                successfully launched campaigns that increased our social
+                engagement by 300% and customer acquisition by 150%.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center justify-end space-x-2">
+                  <svg
+                    className="w-5 h-5 text-blue-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-1a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="font-semibold text-gray-800">
+                    Specialties:
+                  </span>
+                  <span className="text-gray-600">
+                    Digital Strategy, Brand Development
+                  </span>
+                </div>
+                <h1 className="text-black font-bold flex gap-4 justify-end">
+                  Contact:
+                  <span className="text-purple-600 font-medium">
+                    03121411749
+                  </span>
+                </h1>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-      
 
       {/* Values Section */}
       <div className="container mx-auto px-6 py-16">

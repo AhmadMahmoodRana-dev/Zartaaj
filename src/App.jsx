@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Navbar from "./components/Navbar";
+import ContactUs1 from "./pages/ContactUs1";
 const App = () => {
   return (
     <>
@@ -10,6 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<ContactUs1/>} />
         <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
       <a className="flex flex-col justify-between items-center" href="https://wa.me/923248988989" target="_blank" id="whatsapp-icon">
